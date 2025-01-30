@@ -1,0 +1,109 @@
+1.
+Category: JavaScript
+Question Text: What does the `this` keyword refer to in JavaScript?
+Difficulty Level: Medium
+Options:
+  A. The current function
+  B. The global object
+  C. The object in which the function is invoked
+  D. None of the above
+Correct Answer: C
+
+2.
+Category: React
+Question Text: What is the default value of `React.Component`'s `state`?
+Difficulty Level: Easy
+Options:
+  A. null
+  B. undefined
+  C. {}
+  D. []
+Correct Answer: C
+
+3.
+Category: JavaScript
+Question Text: Which of the following is NOT a primitive type in JavaScript?
+Difficulty Level: Hard
+Options:
+  A. String
+  B. Number
+  C. Object
+  D. Undefined
+Correct Answer: C
+
+4.
+Category: JavaScript
+Question Text: Which method is used to parse a JSON string into a JavaScript object?
+Difficulty Level: Easy
+Options:
+  A. JSON.parse()
+  B. JSON.stringify()
+  C. JSON.objectify()
+  D. JSON.decode()
+Correct Answer: A
+
+5.
+Category: React
+Question Text: What is the main purpose of React's `useEffect` hook?
+Difficulty Level: Medium
+Options:
+  A. To manage component state
+  B. To fetch data from an API
+  C. To perform side effects in function components
+  D. To memoize the component
+Correct Answer: C
+
+6.
+Category: JavaScript
+Question Text: What is the output of the following code: `console.log(typeof NaN)`?
+Difficulty Level: Easy
+Options:
+  A. "undefined"
+  B. "number"
+  C. "object"
+  D. "NaN"
+Correct Answer: B
+
+7.
+Category: JavaScript
+Question Text: What will the following code return: `[] == []`?
+Difficulty Level: Medium
+Options:
+  A. true
+  B. false
+  C. undefined
+  D. Error
+Correct Answer: B
+
+8.
+Category: React
+Question Text: Which hook allows you to perform side effects in functional components in React?
+Difficulty Level: Easy
+Options:
+  A. useState
+  B. useEffect
+  C. useRef
+  D. useContext
+Correct Answer: B
+
+9.
+Category: JavaScript
+Question Text: Which of the following is the correct way to declare a variable in JavaScript that cannot be reassigned?
+Difficulty Level: Medium
+Options:
+  A. let variableName
+  B. const variableName
+  C. var variableName
+  D. variableName
+Correct Answer: B
+
+10.
+Category: React
+Question Text: What is the primary benefit of using React's `key` attribute in lists?
+Difficulty Level: Hard
+Options:
+  A. Helps with styling elements in the list
+  B. Ensures uniqueness of each element
+  C. Optimizes performance by helping React identify which items have changed
+  D. Provides accessibility for screen readers
+Correct Answer: C
