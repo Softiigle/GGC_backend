@@ -2,8 +2,11 @@
 const db = require('../database');
 const { httpCodes } = require('../config');
 const errorObjGenerator = require('../middleware/errorObjGenerator');
+const { Sequelize } = require('sequelize');
+
 
 const Class = db.Class;
+const Student = db.students;
 
 class ClassService {}
 
@@ -34,7 +37,21 @@ ClassService.createClass = async ({ className, coachingOwnerId }) => {
 // Get all classes for a specific owner
 ClassService.getAllClasses = async (coachingOwnerId) => {
     try {
-        const classes = await Class.findAll({ where: { coachingOwnerId } });
+        const classes = await Class.findAll({
+            where: { coachingOwnerId },  
+            attributes: [
+                'classId', 'className', 
+                [Sequelize.fn('COUNT', Sequelize.col('students.studentId')), 'totalStudents'] 
+            ],
+            include: [
+                {
+                    model: Student,
+                    as: 'students',
+                    attributes: [], 
+                }
+            ],
+            group: ['Class.classId'] 
+        });
         return classes;
     } catch (error) {
         console.error("Error while fetching classes:", error);
