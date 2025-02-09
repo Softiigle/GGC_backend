@@ -43,5 +43,5 @@ db.sequelize.sync()
   
 
 app.listen(PORT, () => {
-  console.log(`pocketStore server started at ${PORT}`);
+  console.log(`GGC server started at ${PORT}`);
 });

@@ -14,9 +14,33 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: true,
     },
+    emailOtp: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    emailOtpExpiry: {
+      type: DataTypes.DATE, 
+      allowNull: true,
+    },
+    emailVerified: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
     phone: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    phoneOtp: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    phoneOtpExpiry: {
+      type: DataTypes.DATE, // Stores OTP expiration timestamp
+      allowNull: true,
+    },
+    phoneVerified: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
     },
     password: {
       type: DataTypes.STRING,
@@ -25,6 +49,10 @@ module.exports = (sequelize, DataTypes) => {
     coachingName: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    coachingStatus: {
+      type: DataTypes.ENUM("pending", "active", "hold"),
+      defaultValue: "pending",
     },
     address: {
       type: DataTypes.TEXT,
